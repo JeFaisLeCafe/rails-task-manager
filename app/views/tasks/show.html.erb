@@ -1,0 +1,16 @@
+<h1><%= @task.title %></h1>
+<%= @task.details %>
+<div>
+  <%= link_to "Edit", tasks_id_edit_path %>
+</div>
+<div>
+  <%= link_to "Delete", task_delete_path, method: :delete %>
+</div>
+<div>
+  <% if @task.completed %>
+  <i class="far fa-check-square"></i> This task is completed
+  <% else %>
+  <i class="far fa-square"></i> This task is yet to be completed
+  <% end %>
+</div>
+

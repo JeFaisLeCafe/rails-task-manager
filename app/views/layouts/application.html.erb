@@ -7,9 +7,18 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
 
   <body>
+    <h1>Welcome in your Task Manager</h1>
+
     <%= yield %>
+
+    <div>
+      <%= link_to "Back Home", tasks_path %>
+      <p>This has been approuved by Elon Musk himself (100% true trust me)</p>
+    </div>
+
   </body>
 </html>
